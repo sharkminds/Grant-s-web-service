@@ -1,0 +1,137 @@
+<%= form_for(@episode) do |f| %>
+  <% if @episode.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@episode.errors.count, "error") %> prohibited this episode from being saved:</h2>
+
+      <ul>
+      <% @episode.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :episode_id %><br />
+    <%= f.number_field :episode_id %>
+  </div>
+  <div class="field">
+    <%= f.label :episode_number %><br />
+    <%= f.number_field :episode_number %>
+  </div>
+  <div class="field">
+    <%= f.label :artist1 %><br />
+    <%= f.number_field :artist1 %>
+  </div>
+  <div class="field">
+    <%= f.label :artist2 %><br />
+    <%= f.number_field :artist2 %>
+  </div>
+  <div class="field">
+    <%= f.label :episode_host_id %><br />
+    <%= f.number_field :episode_host_id %>
+  </div>
+  <div class="field">
+    <%= f.label :salon_id %><br />
+    <%= f.number_field :salon_id %>
+  </div>
+  <div class="field">
+    <%= f.label :episode_title %><br />
+    <%= f.text_area :episode_title %>
+  </div>
+  <div class="field">
+    <%= f.label :episode_short_title %><br />
+    <%= f.text_area :episode_short_title %>
+  </div>
+  <div class="field">
+    <%= f.label :episode_browser_title %><br />
+    <%= f.text_area :episode_browser_title %>
+  </div>
+  <div class="field">
+    <%= f.label :pretty_url %><br />
+    <%= f.text_area :pretty_url %>
+  </div>
+  <div class="field">
+    <%= f.label :episode_meta_desc %><br />
+    <%= f.text_area :episode_meta_desc %>
+  </div>
+  <div class="field">
+    <%= f.label :episode_meta_keywords %><br />
+    <%= f.text_area :episode_meta_keywords %>
+  </div>
+  <div class="field">
+    <%= f.label :episode_url %><br />
+    <%= f.text_area :episode_url %>
+  </div>
+  <div class="field">
+    <%= f.label :episode_still_img %><br />
+    <%= f.text_area :episode_still_img %>
+  </div>
+  <div class="field">
+    <%= f.label :video_code_flash %><br />
+    <%= f.text_area :video_code_flash %>
+  </div>
+  <div class="field">
+    <%= f.label :video_code_quick_time %><br />
+    <%= f.text_area :video_code_quick_time %>
+  </div>
+  <div class="field">
+    <%= f.label :video_code_iphone %><br />
+    <%= f.text_area :video_code_iphone %>
+  </div>
+  <div class="field">
+    <%= f.label :video_code_black_berry %><br />
+    <%= f.text_area :video_code_black_berry %>
+  </div>
+  <div class="field">
+    <%= f.label :video_code_android %><br />
+    <%= f.text_area :video_code_android %>
+  </div>
+  <div class="field">
+    <%= f.label :video_code_ipad %><br />
+    <%= f.text_area :video_code_ipad %>
+  </div>
+  <div class="field">
+    <%= f.label :episode_notes %><br />
+    <%= f.text_area :episode_notes %>
+  </div>
+  <div class="field">
+    <%= f.label :episode_pic %><br />
+    <%= f.text_area :episode_pic %>
+  </div>
+  <div class="field">
+    <%= f.label :episode_alt_img_tag %><br />
+    <%= f.text_area :episode_alt_img_tag %>
+  </div>
+  <div class="field">
+    <%= f.label :publish_date %><br />
+    <%= f.date_select :publish_date %>
+  </div>
+  <div class="field">
+    <%= f.label :auto_publish %><br />
+    <%= f.number_field :auto_publish %>
+  </div>
+  <div class="field">
+    <%= f.label :vip_episode %><br />
+    <%= f.number_field :vip_episode %>
+  </div>
+  <div class="field">
+    <%= f.label :downloadable %><br />
+    <%= f.number_field :downloadable %>
+  </div>
+  <div class="field">
+    <%= f.label :vip_group %><br />
+    <%= f.number_field :vip_group %>
+  </div>
+  <div class="field">
+    <%= f.label :category %><br />
+    <%= f.text_area :category %>
+  </div>
+  <div class="field">
+    <%= f.label :video_length %><br />
+    <%= f.text_area :video_length %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

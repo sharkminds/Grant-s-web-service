@@ -1,0 +1,65 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  episode_id: 1
+  episode_number: 1
+  artist1: 1
+  artist2: 1
+  episode_host_id: 1
+  salon_id: 1
+  episode_title: MyText
+  episode_short_title: MyText
+  episode_browser_title: MyText
+  pretty_url: MyText
+  episode_meta_desc: MyText
+  episode_meta_keywords: MyText
+  episode_url: MyText
+  episode_still_img: MyText
+  video_code_flash: MyText
+  video_code_quick_time: MyText
+  video_code_iphone: MyText
+  video_code_black_berry: MyText
+  video_code_android: MyText
+  video_code_ipad: MyText
+  episode_notes: MyText
+  episode_pic: MyText
+  episode_alt_img_tag: MyText
+  publish_date: 2011-10-08
+  auto_publish: 1
+  vip_episode: 1
+  downloadable: 1
+  vip_group: 1
+  category: MyText
+  video_length: MyText
+
+two:
+  episode_id: 1
+  episode_number: 1
+  artist1: 1
+  artist2: 1
+  episode_host_id: 1
+  salon_id: 1
+  episode_title: MyText
+  episode_short_title: MyText
+  episode_browser_title: MyText
+  pretty_url: MyText
+  episode_meta_desc: MyText
+  episode_meta_keywords: MyText
+  episode_url: MyText
+  episode_still_img: MyText
+  video_code_flash: MyText
+  video_code_quick_time: MyText
+  video_code_iphone: MyText
+  video_code_black_berry: MyText
+  video_code_android: MyText
+  video_code_ipad: MyText
+  episode_notes: MyText
+  episode_pic: MyText
+  episode_alt_img_tag: MyText
+  publish_date: 2011-10-08
+  auto_publish: 1
+  vip_episode: 1
+  downloadable: 1
+  vip_group: 1
+  category: MyText
+  video_length: MyText

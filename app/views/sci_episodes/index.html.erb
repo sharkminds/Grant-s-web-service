@@ -1,0 +1,81 @@
+<h1>Listing sci_episodes</h1>
+
+<table>
+  <tr>
+    <th>Episode</th>
+    <th>Episode number</th>
+    <th>Artist1</th>
+    <th>Artist2</th>
+    <th>Episode host</th>
+    <th>Salon</th>
+    <th>Episode title</th>
+    <th>Episode short title</th>
+    <th>Episode browser title</th>
+    <th>Pretty url</th>
+    <th>Episode meta desc</th>
+    <th>Episode meta keywords</th>
+    <th>Episode url</th>
+    <th>Episode still img</th>
+    <th>Video code flash</th>
+    <th>Video code quick time</th>
+    <th>Video code iphone</th>
+    <th>Video code black berry</th>
+    <th>Video code android</th>
+    <th>Video code ipad</th>
+    <th>Episode notes</th>
+    <th>Episode pic</th>
+    <th>Episode alt img tag</th>
+    <th>Publish date</th>
+    <th>Auto publish</th>
+    <th>Vip episode</th>
+    <th>Downloadable</th>
+    <th>Vip group</th>
+    <th>Category</th>
+    <th>Video length</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sci_episodes.each do |sci_episode| %>
+  <tr>
+    <td><%= sci_episode.episode_id %></td>
+    <td><%= sci_episode.episode_number %></td>
+    <td><%= sci_episode.artist1 %></td>
+    <td><%= sci_episode.artist2 %></td>
+    <td><%= sci_episode.episode_host_id %></td>
+    <td><%= sci_episode.salon_id %></td>
+    <td><%= sci_episode.episode_title %></td>
+    <td><%= sci_episode.episode_short_title %></td>
+    <td><%= sci_episode.episode_browser_title %></td>
+    <td><%= sci_episode.pretty_url %></td>
+    <td><%= sci_episode.episode_meta_desc %></td>
+    <td><%= sci_episode.episode_meta_keywords %></td>
+    <td><%= sci_episode.episode_url %></td>
+    <td><%= sci_episode.episode_still_img %></td>
+    <td><%= sci_episode.video_code_flash %></td>
+    <td><%= sci_episode.video_code_quick_time %></td>
+    <td><%= sci_episode.video_code_iphone %></td>
+    <td><%= sci_episode.video_code_black_berry %></td>
+    <td><%= sci_episode.video_code_android %></td>
+    <td><%= sci_episode.video_code_ipad %></td>
+    <td><%= sci_episode.episode_notes %></td>
+    <td><%= sci_episode.episode_pic %></td>
+    <td><%= sci_episode.episode_alt_img_tag %></td>
+    <td><%= sci_episode.publish_date %></td>
+    <td><%= sci_episode.auto_publish %></td>
+    <td><%= sci_episode.vip_episode %></td>
+    <td><%= sci_episode.downloadable %></td>
+    <td><%= sci_episode.vip_group %></td>
+    <td><%= sci_episode.category %></td>
+    <td><%= sci_episode.video_length %></td>
+    <td><%= link_to 'Show', sci_episode %></td>
+    <td><%= link_to 'Edit', edit_sci_episode_path(sci_episode) %></td>
+    <td><%= link_to 'Destroy', sci_episode, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sci episode', new_sci_episode_path %>

@@ -1,0 +1,81 @@
+<h1>Listing episodes</h1>
+
+<table>
+  <tr>
+    <th>Episode</th>
+    <th>Episode number</th>
+    <th>Artist1</th>
+    <th>Artist2</th>
+    <th>Episode host</th>
+    <th>Salon</th>
+    <th>Episode title</th>
+    <th>Episode short title</th>
+    <th>Episode browser title</th>
+    <th>Pretty url</th>
+    <th>Episode meta desc</th>
+    <th>Episode meta keywords</th>
+    <th>Episode url</th>
+    <th>Episode still img</th>
+    <th>Video code flash</th>
+    <th>Video code quick time</th>
+    <th>Video code iphone</th>
+    <th>Video code black berry</th>
+    <th>Video code android</th>
+    <th>Video code ipad</th>
+    <th>Episode notes</th>
+    <th>Episode pic</th>
+    <th>Episode alt img tag</th>
+    <th>Publish date</th>
+    <th>Auto publish</th>
+    <th>Vip episode</th>
+    <th>Downloadable</th>
+    <th>Vip group</th>
+    <th>Category</th>
+    <th>Video length</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @episodes.each do |episode| %>
+  <tr>
+    <td><%= episode.episode_id %></td>
+    <td><%= episode.episode_number %></td>
+    <td><%= episode.artist1 %></td>
+    <td><%= episode.artist2 %></td>
+    <td><%= episode.episode_host_id %></td>
+    <td><%= episode.salon_id %></td>
+    <td><%= episode.episode_title %></td>
+    <td><%= episode.episode_short_title %></td>
+    <td><%= episode.episode_browser_title %></td>
+    <td><%= episode.pretty_url %></td>
+    <td><%= episode.episode_meta_desc %></td>
+    <td><%= episode.episode_meta_keywords %></td>
+    <td><%= episode.episode_url %></td>
+    <td><%= episode.episode_still_img %></td>
+    <td><%= episode.video_code_flash %></td>
+    <td><%= episode.video_code_quick_time %></td>
+    <td><%= episode.video_code_iphone %></td>
+    <td><%= episode.video_code_black_berry %></td>
+    <td><%= episode.video_code_android %></td>
+    <td><%= episode.video_code_ipad %></td>
+    <td><%= episode.episode_notes %></td>
+    <td><%= episode.episode_pic %></td>
+    <td><%= episode.episode_alt_img_tag %></td>
+    <td><%= episode.publish_date %></td>
+    <td><%= episode.auto_publish %></td>
+    <td><%= episode.vip_episode %></td>
+    <td><%= episode.downloadable %></td>
+    <td><%= episode.vip_group %></td>
+    <td><%= episode.category %></td>
+    <td><%= episode.video_length %></td>
+    <td><%= link_to 'Show', episode %></td>
+    <td><%= link_to 'Edit', edit_episode_path(episode) %></td>
+    <td><%= link_to 'Destroy', episode, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Episode', new_episode_path %>
